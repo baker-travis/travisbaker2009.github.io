@@ -281,7 +281,7 @@ $("#contact").on("mouseout", function() {$("#contact").css("border-bottom", "6px
   }
   .nav .open
   {
-    background-color: black; !important
+    background-color: black !important;
   }
 </style>
 
@@ -306,9 +306,13 @@ $("#contact").on("mouseout", function() {$("#contact").css("border-bottom", "6px
         <li>
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Students <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><h1 style="color: black;">Current</h1></li>
-            <li class="divider"></li>
-            <li><a href="#">Courses</a></li>
+            <li>
+             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Current <b class="caret"></b></a>
+             <ul class="dropdown-menu">
+               <li class="divider"></li>
+               <li><a href="#">Courses</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li class="dropdown">
