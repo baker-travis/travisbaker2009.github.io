@@ -199,27 +199,27 @@ function changePage()
 {
 if (department == "home")
 {
-$("#home").css("border-bottom", "6px solid #f09427");
+$("#home a").css("border-bottom", "6px solid #f09427");
 }
 
 if (department == "currentStudents")
 {
-$("#students").css("border-bottom", "6px solid #d8635a");
+$("#students a").css("border-bottom", "6px solid #d8635a");
 }
 
 if (department == "futureStudents")
 {
-$("#students").css("border-bottom", "6px solid #5c9fcc");
+$("#students a").css("border-bottom", "6px solid #5c9fcc");
 }
 
 if (department == "instructors")
 {
-$("#instructors").css("border-bottom", "6px solid #88bc70");
+$("#instructors a").css("border-bottom", "6px solid #88bc70");
 }
 
 if (department == "contact")
 {
-$("#contact").css("border-bottom", "6px solid black");
+$("#contact a").css("border-bottom", "6px solid black");
 }
 }
 
@@ -227,44 +227,44 @@ function changeNavBar()
 {
 
 $("#home").on("mouseover", function() {
-$("#students").css("border-bottom", "6px solid #626263");
-$("#instructors").css("border-bottom", "6px solid #626263");
-$("#contact").css("border-bottom", "6px solid #626263");
+$("#students a").css("border-bottom", "6px solid #626263");
+$("#instructors a").css("border-bottom", "6px solid #626263");
+$("#contact a").css("border-bottom", "6px solid #626263");
 
-$("#home").css("border-bottom", "6px solid #f09427");
+$("#home a").css("border-bottom", "6px solid #f09427");
 });
 
 
 $("#students").on("mouseover", function() {
-$("#home").css("border-bottom", "6px solid #626263");
-$("#instructors").css("border-bottom", "6px solid #626263");
-$("#contact").css("border-bottom", "6px solid #626263");
+$("#home a").css("border-bottom", "6px solid #626263");
+$("#instructors a").css("border-bottom", "6px solid #626263");
+$("#contact a").css("border-bottom", "6px solid #626263");
 
-$("#students").css("border-bottom", "6px solid #5c9fcc");
+$("#students a").css("border-bottom", "6px solid #5c9fcc");
 });
 
 
 $("#instructors").on("mouseover", function() {
-$("#home").css("border-bottom", "6px solid #626263");
-$("#students").css("border-bottom", "6px solid #626263");
-$("#contact").css("border-bottom", "6px solid #626263");
+$("#home a").css("border-bottom", "6px solid #626263");
+$("#students a").css("border-bottom", "6px solid #626263");
+$("#contact a").css("border-bottom", "6px solid #626263");
 
-$("#instructors").css("border-bottom", "6px solid #88bc70");
+$("#instructors a").css("border-bottom", "6px solid #88bc70");
 });
 
 
 $("#contact").on("mouseover", function() {
-$("#home").css("border-bottom", "6px solid #626263");
-$("#students").css("border-bottom", "6px solid #626263");
-$("#instructors").css("border-bottom", "6px solid #626263");
+$("#home a").css("border-bottom", "6px solid #626263");
+$("#students a").css("border-bottom", "6px solid #626263");
+$("#instructors a").css("border-bottom", "6px solid #626263");
 
-$("#contact").css("border-bottom", "6px solid black");
+$("#contact a").css("border-bottom", "6px solid black");
 });
 
-$("#home").on("mouseout", function() {$("#home").css("border-bottom", "6px solid #626263"); changePage(window.location);});
-$("#students").on("mouseout", function() {$("#students").css("border-bottom", "6px solid #626263"); changePage(window.location);});
-$("#instructors").on("mouseout", function() {$("#instructors").css("border-bottom", "6px solid #626263"); changePage(window.location);});
-$("#contact").on("mouseout", function() {$("#contact").css("border-bottom", "6px solid #626263"); changePage(window.location);});
+$("#home").on("mouseout", function() {$("#home a").css("border-bottom", "6px solid #626263"); changePage(window.location);});
+$("#students").on("mouseout", function() {$("#students a").css("border-bottom", "6px solid #626263"); changePage(window.location);});
+$("#instructors").on("mouseout", function() {$("#instructors a").css("border-bottom", "6px solid #626263"); changePage(window.location);});
+$("#contact").on("mouseout", function() {$("#contact a").css("border-bottom", "6px solid #626263"); changePage(window.location);});
 
 }
 </script>
