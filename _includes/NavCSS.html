@@ -1,45 +1,46 @@
 <style>
 #menu
 {
-	list-style: none; /* Takes the bullets away */
-	width: 950px; /* Sets the width of the navigation bar */
-	position relative;
+list-style: none; /* Takes the bullets away */
+/*width: 950px; /* Sets the width of the navigation bar */
+position relative;
   margin: 0px 0px 0px 0px; /* Sets the placement of the navigation bar */
-	height: 38px; /* Sets the height of the navigation bar */
-	padding: 0px 0px 0px 0px; /* This changes the padding of the list to not be indented. */
-	background: #3174ae;
+height: 38px; /* Sets the height of the navigation bar */
+padding: 0px 0px 0px 0px; /* This changes the padding of the list to not be indented. */
+background: #056CB6;
   border-bottom: 6px solid #626263;
         /*border-radius: 5px;*/ /* Only if you want rounded edges */
 }
 
-#menu li  /* Experiment with these values */
-{  
-	float:left; 
-	display:inline;  
-	text-align:center;  
-	position:relative;  
-	padding: 8px 0px 8px 0px;  
-	margin: 0px;  /* Causes a margin on the left and right. Get rid of if possible */    
-	border:none;  
-	width: 15%;
-  font-family:Arial, Helvetica, sans-serif;  
-	font-size:14px;  
+#menu li /* Experiment with these values */
+{
+float:left;
+display:inline;
+text-align:center;
+position:relative;
+padding: 8px 0px 4px 0px;
+margin: 0px; /* Causes a margin on the left and right. Get rid of if possible */
+border:none;
+width: 15%;
+  font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
   outline:0;
-	color: #eeeeee;  
-	text-decoration:none;
-  height: 18px;
+color: #eeeeee;
+text-decoration:none;
+/* height: 18px;*/
   font-weight: 500; /*Play with this value to get the weight of the text just right */
-}  
+}
 
-#menu li a {  
-	font-family:Arial, Helvetica, sans-serif;  
-	font-size:14px;   
-	color: #eeeeee;  
-	display:block;  
-	outline:0;  
-	text-decoration:none;
+#menu li a {
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+color: #eeeeee;
+display:block;
+outline:0;
+text-decoration:none;
   padding-top: 0;
-}  
+  border: none;
+}
 
 #menu li div a
 {
@@ -51,121 +52,110 @@
   border-left: 1px solid white;
 }
 
-#menu li > img.pointer
+.dropdown_5columns
 {
-  display: none;
-  margin-bottom: 3px;
-}
-
-#menu li:hover > img.pointer{ 
-  display: inline;
-	/* This and the one above it are links to a nice arrow showing expansion */
-}  
-
-.dropdown_5columns 
-{  
-	margin:11px auto;  /* Brings the drop down box a little below the lettering of the main hover overs */
-	position:absolute;  
-	left:-999em; /* Hides the drop down */  
-	text-align:left;  
+margin:10px auto; /* Brings the drop down box a little below the lettering of the main hover overs */
+position:absolute;
+left:-999em; /* Hides the drop down */
+text-align:left;
   padding-left: 15px;
-	border-left:3px solid #404041;
+border-left:3px solid #404041;
   border-right:3px solid #404041;
   border-bottom:3px solid #404041;
  /* border-top: 6px solid #d64f34;*/
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	overflow: hidden; /* Sets it so it cuts off the image */
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+overflow: hidden; /* Sets it so it cuts off the image */
   background: #fff0d9; /* Makes it so you can't see what's in the background of the file */
   z-index: 10001;
-}  
+}
 
-.dropdown_5columns {width: 686px;}
+.dropdown_5columns {width: 687px;}
 
-#menu li:hover .dropdown_5columns 
-{  
-	left:-50%; 
-	top:auto;  
-}  
+#menu li:hover .dropdown_5columns
+{
+left:-50%;
+top:auto;
+}
 
-#menu .menu_right  /* If you want the menu aligned right */
-{  
-	float:right;  
-	margin-right:0px;  
-}  
+#menu .menu_right /* If you want the menu aligned right */
+{
+float:right;
+margin-right:0px;
+}
 
-#menu li .align_right  /*This is also only if you want to make the menu aligned right */
-{  
-	/* Rounded Corners */  
-	/*-moz-border-radius: 0px 0px 10px 10px;  
-	-webkit-border-radius: 0px 0px 10px 10px;  
-	border-radius: 0px 0px 10px 10px;  */
-}  
+#menu li .align_right /*This is also only if you want to make the menu aligned right */
+{
+/* Rounded Corners */
+/*-moz-border-radius: 0px 0px 10px 10px;
+-webkit-border-radius: 0px 0px 10px 10px;
+border-radius: 0px 0px 10px 10px; */
+}
 
-#menu li:hover .align_right  /* This is to make the drop down appear on the right */
-{  
-	left:-250%;
-	right:auto;
-	top:auto;
-}  
+#menu li:hover .align_right /* This is to make the drop down appear on the right */
+{
+left:-250%;
+right:auto;
+top:auto;
+}
 
-#menu .menu_center  /* If you want the menu aligned center */
-{  
-	float:left;  
-	margin-left:0px;  
-}  
+#menu .menu_center /* If you want the menu aligned center */
+{
+float:left;
+margin-left:0px;
+}
 
-#menu li .align_center  /*This is also only if you want to make the menu aligned center */
-{  
-	/* Rounded Corners */  
-	/*-moz-border-radius: 0px 0px 10px 10px;  
-	-webkit-border-radius: 0px 0px 5px 5px;  
-	border-radius: 0px 0px 5px 5px;  */
-}  
+#menu li .align_center /*This is also only if you want to make the menu aligned center */
+{
+/* Rounded Corners */
+/*-moz-border-radius: 0px 0px 10px 10px;
+-webkit-border-radius: 0px 0px 5px 5px;
+border-radius: 0px 0px 5px 5px; */
+}
 
-#menu li:hover .align_center  /* This is to make the drop down appear on the center */
-{  
-	left:-150%; /* Sets the dropdown box to display full width of the box. */
-	right:auto;  
-	top:auto;  
-}  
+#menu li:hover .align_center /* This is to make the drop down appear on the center */
+{
+left:-150%; /* Sets the dropdown box to display full width of the box. */
+right:auto;
+top:auto;
+}
 
 /* The following is basic styling for the basic tags inside the menu */
 /***********************************************************************************/
-#menu p {  
-	line-height:15px;  
-	margin:0 0 0 0;  
-}  
+#menu p {
+line-height:15px;
+margin:0 0 0 0;
+}
 /**********************************************************************************/
 
 /* These two selectors give a nice color to the links inside of the drop down menu */
-#menu li:hover div a {  
-	font-size:12px;  
-	color:#015b86;  
-}  
-#menu li:hover div a:hover {  
-	color:#029feb;  
-}  
+#menu li:hover div a {
+font-size:12px;
+color:#015b86;
+}
+#menu li:hover div a:hover {
+color:#029feb;
+}
 
 /************ These three selectors give a nice style to the lists inside of the dropdown **********************/
-#menu li div ul {  
-	list-style:none;  
+#menu li div ul {
+list-style:none;
   display: block;
   float: left;
-	padding:0;  
-	margin:0 0 5px 0;  
-}  
+padding:0;
+margin:0 0 5px 0;
+}
 
 /*********************************************************************************/
 </style>
 
-<ul id="menu">
+<ul id="menu" class="hidden-sm hidden-xs col-md-12">
 <li style="color: #eeeeee; margin-left: 15px; padding-top: 8px;">Online Learning:</li>
-<li style="color: #eeeeee; text-align: right; padding-right: 15px; width: 52px; margin-left: 90px;" id="home"><a href="http://www.byui.edu/online">Home</a></li>
+<li style="color: #eeeeee; text-align: right; padding-right: 15px; padding-left: 15px; width: 67px; margin-left: 101px;" id="home"><a href="http://www.byui.edu/online">Home</a></li>
 <li id="students"><a class="drop" href="http://ingeniux.byui.edu/admin/xml/">Students</a>
-<div class="dropdown_5columns" style="border-top-color: #d9645b;"><img alt="Students" height="207" src="Images/Admin_Offices/Online%20Learning/New%20Website/Girl_Studying.jpg" width="314"  style="float: right; background: 3174ae;"/>
+<div class="dropdown_5columns" style="border-top-color: #d9645b;"><img alt="Students" height="207" src="Images/Admin_Offices/Online%20Learning/New%20Website/Girl_Studying.jpg" width="314" style="float: right; background: 3174ae;"/>
 <h1 style="color: #3174ae; font-size: 20pt; font-weight: 700; font-family: sans-serif; margin-top: 16px;">STUDENTS</h1>
-<div style="width: 130px; float: left; padding-right: 23px; border-right: 1px   solid black;">
+<div style="width: 130px; float: left; padding-right: 23px; border-right: 1px solid black;">
 <p style="color: black; font-size: 16pt;">Current</p>
 <a href="http://ingeniux.byui.edu/admin/xml/">Courses</a> <a href="http://ingeniux.byui.edu/admin/xml/">Registration</a> <a href="http://ingeniux.byui.edu/admin/xml/">On Campus/Off Track</a> <a href="http://ingeniux.byui.edu/admin/xml/"> Help &amp; Resources</a> <a href="http://ingeniux.byui.edu/admin/xml/">Community</a></div>
 <div style="margin-left: 190px;">
@@ -176,7 +166,7 @@
 <li class="menu_center" id="instructors"><a class="drop" href="http://ingeniux.byui.edu/admin/xml/">Instructors</a>
 <div class="dropdown_5columns align_center" style="border-top-color: #91c27b;"><img alt="Instructors" height="207" src="Images/Admin_Offices/Online%20Learning/New%20Website/Instructor_Working_smaller.jpg" style="float: right; background: #3174ae;" width="314" />
 <h1 style="color: #3174ae; font-size: 20pt; font-weight: 700; font-family: sans-serif; margin-top: 16px;">INSTRUCTORS</h1>
-<div style="width: 130px; float: left; padding-right: 23px; border-right: 1px   solid black;">
+<div style="width: 130px; float: left; padding-right: 23px; border-right: 1px solid black;">
 <p style="color: black; font-size: 16pt;">Employment</p>
 <a href="http://ingeniux.byui.edu/admin/xml/">Our Approach</a> <a href="http://ingeniux.byui.edu/admin/xml/">Open Positions</a> <a href="http://ingeniux.byui.edu/admin/xml/">Instructor Expectations</a> <a href="http://ingeniux.byui.edu/admin/xml/">Contact Us</a></div>
 <div style="margin-left: 190px;">
@@ -198,34 +188,36 @@
 
 
 <script>
+var department = "";
+
 window.onload=function(){changePage(); changeNavBar();};
 
 function changePage()
 {
-	if (department == "home")
-	{
-		$("#home").css("border-bottom", "6px solid #f09427");
-	}
+if (department == "home")
+{
+$("#home").css("border-bottom", "6px solid #f09427");
+}
 
-	if (department == "currentStudents")
-	{
-		$("#students").css("border-bottom", "6px solid #d8635a");
-	}
+if (department == "currentStudents")
+{
+$("#students").css("border-bottom", "6px solid #d8635a");
+}
 
-	if (department == "futureStudents")
-	{
-		$("#students").css("border-bottom", "6px solid #5c9fcc");
-	}
+if (department == "futureStudents")
+{
+$("#students").css("border-bottom", "6px solid #5c9fcc");
+}
 
-	if (department == "instructors")
-	{
-		$("#instructors").css("border-bottom", "6px solid #88bc70");
-	}
+if (department == "instructors")
+{
+$("#instructors").css("border-bottom", "6px solid #88bc70");
+}
 
-	if (department == "contact")
-	{
-		$("#contact").css("border-bottom", "6px solid black");
-	}
+if (department == "contact")
+{
+$("#contact").css("border-bottom", "6px solid #f09427");
+}
 }
 
 function changeNavBar()
@@ -263,7 +255,7 @@ $("#home").css("border-bottom", "6px solid #626263");
 $("#students").css("border-bottom", "6px solid #626263");
 $("#instructors").css("border-bottom", "6px solid #626263");
 
-$("#contact").css("border-bottom", "6px solid black");
+$("#contact").css("border-bottom", "6px solid #056CB6");
 });
 
 $("#home").on("mouseout", function() {$("#home").css("border-bottom", "6px solid #626263"); changePage(window.location);});
@@ -273,3 +265,106 @@ $("#contact").on("mouseout", function() {$("#contact").css("border-bottom", "6px
 
 }
 </script>
+
+<style>
+  .nav > li > a
+  {
+    color: white !important;
+  }
+  .nav > li
+  {
+    color: white !important;
+  }
+  .nav >li li
+  {
+    color: black;
+  }
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: black;
+    color: white;
+}
+
+.nav > li li.head
+{
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+@media (max-width: 767px) {
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: white;
+}
+.nav >li li
+  {
+    color: white;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default, .navbar-nav .open .dropdown-menu > li > a:focus
+  {
+    background-color: #404041;
+    color: white;
+  }
+}
+</style>
+
+<!--This is the separate version for a smaller screen-->
+<nav class="navbar navbar-default hidden-md hidden-lg" role="navigation">
+  <div class="container-fluid" style="background-color: #056CB6;">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="color: white;">Online Learning</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Students <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li class="head">Current</li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Registration</a></li>
+            <li><a href="#">On Campus/Off Track</a></li>
+            <li><a href="#">Help &amp; Resources</a></li>
+            <li><a href="#">Community</a></li>
+            <li class="divider"></li>
+            <li class="head">Future</li>
+            <li><a href="#">Degrees, Certificates, &amp; Costs</a></li>
+            <li><a href="#">What To Expect</a></li>
+            <li><a href="#">Help &amp; Resources</a></li>
+            <li><a href="#">Apply Online</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Instructors <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li class="head">Employment</li>
+            <li><a href="#">Our Approach</a></li>
+            <li><a href="#">Open Positions</a></li>
+            <li><a href="#">Instructor Expectations</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li class="divider"></li>
+            <li class="head">Current</li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Course Improvement</a></li>
+            <li><a href="#">Help &amp; Resources</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Us <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Contact Online Support Center</a></li>
+            <li><a href="#">Staff Directory</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
