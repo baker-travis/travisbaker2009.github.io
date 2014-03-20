@@ -11,7 +11,7 @@ position relative;
   margin: 0px 0px 0px 0px; /* Sets the placement of the navigation bar */
 height: 38px; /* Sets the height of the navigation bar */
 padding: 0px 0px 0px 0px; /* This changes the padding of the list to not be indented. */
-background: #3174ae;
+background: #056CB6;
   border-bottom: 6px solid #626263;
         /*border-radius: 5px;*/ /* Only if you want rounded edges */
 }
@@ -220,7 +220,7 @@ $("#instructors").css("border-bottom", "6px solid #88bc70");
 
 if (department == "contact")
 {
-$("#contact").css("border-bottom", "6px solid black");
+$("#contact").css("border-bottom", "6px solid #f09427");
 }
 }
 
@@ -259,7 +259,7 @@ $("#home").css("border-bottom", "6px solid #626263");
 $("#students").css("border-bottom", "6px solid #626263");
 $("#instructors").css("border-bottom", "6px solid #626263");
 
-$("#contact").css("border-bottom", "6px solid black");
+$("#contact").css("border-bottom", "6px solid #056CB6");
 });
 
 $("#home").on("mouseout", function() {$("#home").css("border-bottom", "6px solid #626263"); changePage(window.location);});
@@ -302,12 +302,17 @@ $("#contact").on("mouseout", function() {$("#contact").css("border-bottom", "6px
   {
     color: white;
   }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default, .navbar-nav .open .dropdown-menu > li > a:focus
+  {
+    background-color: #404041;
+    color: white;
+  }
 }
 </style>
 
 <!--This is the separate version for a smaller screen-->
 <nav class="navbar navbar-default hidden-md hidden-lg" role="navigation">
-  <div class="container-fluid" style="background-color: #3174ae;">
+  <div class="container-fluid" style="background-color: #056CB6;">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
