@@ -136,13 +136,37 @@ color:#029feb;
 }
 
 /************ These three selectors give a nice style to the lists inside of the dropdown **********************/
-#menu li div ul {
-list-style:none;
+.dropdown_5columns ul {
+  list-style:none;
   display: block;
   float: left;
-padding:0;
-margin:0 0 5px 0;
+  width: 200px;
+  padding-left: 30px;
+  padding:0;
+  margin:0 0 5px 0;
 }
+
+.dropdown_5columns ul li.head
+{
+  background-color: #ededed;
+  color: #5c9fcc;
+}
+
+.dropdown_5columns li a
+{
+  color: black;
+}
+
+.dropdown_5columns li:hover
+{
+  background-color: #ededed;
+}
+
+.dropdown_5columns li:hover a
+{
+  color: #5c9fcc;
+}
+
 
 /*********************************************************************************/
 </style>
@@ -152,13 +176,31 @@ margin:0 0 5px 0;
 <li style="color: #eeeeee; text-align: right; padding-right: 15px; padding-left: 15px; width: 67px; margin-left: 101px;" id="home"><a href="http://www.byui.edu/online">Home</a></li>
 <li id="students"><a class="drop" href="http://ingeniux.byui.edu/admin/xml/">Students</a>
 <div class="dropdown_5columns" style="border-top-color: #5c9fcc;"><img alt="Students" height="207" src="/assets/Images/Admin_Offices/Online%20Learning/New%20Website/Girl_Studying.jpg" width="314" style="float: right; background: 3174ae;"/>
-<h1 style="color: #3174ae; font-size: 20pt; font-weight: 700; font-family: sans-serif; margin-top: 16px;">STUDENTS</h1>
-<div style="width: 130px; float: left; padding-right: 23px; border-right: 1px solid black;">
-<p style="color: black; font-size: 16pt;">Current</p>
+<!--<div style="width: 130px; float: left; padding-right: 23px; border-right: 1px solid black;">-->
+<ul>
+  <li class="head">Future<br />Students</li>
+  <li><a href="#">Courses</a></li>
+  <li><a href="#">Registration</a></li>
+  <li><a href="#">On Campus/Off Track</a></li>
+  <li><a href="#">Help &amp; Resources</a></li>
+  <li><a href="#">Community</a></li>
+  <li></li>
+</ul>
+<ul>
+  <li class="head">Future<br />Students</li>
+  <li><a href="#">Courses</a></li>
+  <li><a href="#">Registration</a></li>
+  <li><a href="#">On Campus/Off Track</a></li>
+  <li><a href="#">Help &amp; Resources</a></li>
+  <li><a href="#">Community</a></li>
+  <li></li>
+</ul>
+<!--<p style="color: black; font-size: 16pt;">Current</p>
 <a href="http://ingeniux.byui.edu/admin/xml/">Courses</a> <a href="http://ingeniux.byui.edu/admin/xml/">Registration</a> <a href="http://ingeniux.byui.edu/admin/xml/">On Campus/Off Track</a> <a href="http://ingeniux.byui.edu/admin/xml/"> Help &amp; Resources</a> <a href="http://ingeniux.byui.edu/admin/xml/">Community</a></div>
 <div style="margin-left: 190px;">
 <p style="color: black; font-size: 16pt;">Future</p>
 <a href="http://ingeniux.byui.edu/admin/xml/">Degrees, Certificates, &amp; Costs</a> <a href="http://ingeniux.byui.edu/admin/xml/">What to Expect</a> <a href="http://ingeniux.byui.edu/admin/xml/">Help &amp; Resources</a> <a href="http://ingeniux.byui.edu/admin/xml/">Apply Online</a></div>
+-->
 </div>
 </li>
 <li class="menu_center" id="instructors"><a class="drop" href="http://ingeniux.byui.edu/admin/xml/">Instructors</a>
